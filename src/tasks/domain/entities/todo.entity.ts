@@ -1,4 +1,4 @@
-import { Title } from '../value-objects/title';
+import { Title } from '../value-objects/title.vo';
 
 export class Todo {
   private isDone = false;

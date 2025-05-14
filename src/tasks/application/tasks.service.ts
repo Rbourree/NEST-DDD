@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { TodoRepository } from '../domain/repositories/todo-repository';
-import { Todo } from '../domain/entities/todo';
-import { Title } from '../domain/value-objects/title';
+import { TodoRepository } from '../domain/repositories/todo.repository';
+import { Todo } from '../domain/entities/todo.entity';
+import { Title } from '../domain/value-objects/title.vo';
 import { randomUUID } from 'crypto';
 import { NotFoundException } from '@nestjs/common';
 

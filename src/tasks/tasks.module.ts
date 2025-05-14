@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { TaskController } from './interface/http/task.controlleur';
-import { TaskService } from './application/task.service';
+import { TaskController } from './interface/http/tasks.controller';
+import { TaskService } from './application/tasks.service';
 import { PrismaTodoRepository } from './infrastructure/prisma-todo.repository';
-import { TodoRepository } from './domain/repositories/todo-repository';
+import { TodoRepository } from './domain/repositories/todo.repository';
 
 @Module({
   controllers: [TaskController],
