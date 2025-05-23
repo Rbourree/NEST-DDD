@@ -31,7 +31,6 @@ describe('TaskService', () => {
     describe('createTodo', () => {
         it('should create and save a new Todo', async () => {
             const rawTitle = 'Test Todo';
-            const mockTodo = new Todo('1', Title.create(rawTitle));
 
             jest.spyOn(Todo.prototype, 'complete').mockImplementation(); // Mock the complete method
             todoRepository.save.mockResolvedValueOnce();
